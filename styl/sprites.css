@@ -1,0 +1,16 @@
+.icon-gray-tick{
+background-position: 0px 0px;
+width: 23px;
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(../img/spritesheet.png);
+height: 19px;
+}
+.icon-green-tick{
+background-position: -25px 0px;
+width: 23px;
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(../img/spritesheet.png);
+height: 19px;
+}

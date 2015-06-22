@@ -1,0 +1,554 @@
+// Importing general libs
+@import '../node_modules/jeet/stylus/jeet' 
+@import '../node_modules/nib/lib/nib' 
+@import '../node_modules/rupture/rupture' 
+@import "../node_modules/kouto-swiss" 
+@import 'sprites.css'
+
+
+
+// Importing general libs 
+font($font-family, $font-file)
+  @font-face
+    font-family: $font-family
+    src: url("../fonts/" + $font-file + ".eot")
+    src: url("../fonts/" + $font-file + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $font-file + ".woff") format("woff"), url("../fonts/" + $font-file + ".ttf") format("truetype"), url("../fonts/" + $font-file + ".svg#$font-file") format("svg")
+    font-weight: normal
+    font-style: normal
+ 
+
+// /*Importing fonts*/
+font("ASCB", "amaticsc-bold-webfont")
+font("ASCR", "amaticsc-regular-webfont")
+font("CBYG", "coveredbyyourgrace-webfont")
+font("HS", "handsean-webfont")
+font("OSB", "opensans-bold-webfont")
+font("OSBI", "opensans-bolditalic-webfont")
+font("OSL", "opensans-light-webfont")
+font("OSLI", "opensans-lightitalic-webfont")
+font("OSR", "opensans-regular-webfont")
+
+body{
+  font-family OSR,Arial 
+}
+
+// Layout
+.container{
+   // border-left 1px solid red 
+   // border-right 1px solid red 
+   max-width 970px
+   &.container-fluid{ 
+    max-width 100%
+    width 100%
+   }
+}
+ 
+h3.title{
+  text-align center
+  color #521B36
+  font-family ASCB 
+  text-transform uppercase
+}
+
+form{
+  .form-group{
+    margin-bottom 10px
+  }
+  input.form-control{
+    color #999999
+    text-align left
+    padding-left 25px
+    padding-right 25px
+    height 45px
+    border 3px solid #dedede
+    font-family OSB
+    color #333  
+  }
+  label.error{
+    display block
+    text-align center
+    font-size 1em
+    font-family OSL 
+  }
+  .btn-warning{
+    background #F38213
+    line-height 100%
+    font-size 1.2em
+    color #FFF
+    font-family OSB
+    text-align center
+    padding-top 15px
+    padding-bottom 15px
+    // display inline-block
+    vertical-align middle  
+    white-space: normal
+  }
+}
+
+// Header.top
+header.top{
+  padding-top 25px
+  padding-bottom 117px
+  background url("../img/header_image.jpg") no-repeat center #6f6f3e
+  +below(768px){
+    padding-top 0
+    padding-bottom 25px
+  }
+  .container{
+    max-width 970px
+  }
+  .row{
+    margin 0
+  }
+  .col-xs-7{
+    width 67.1%
+    padding-top 82px
+    padding-left 0
+    h1{
+      color #FFF
+      font-size 8.3em
+      +below(979px){
+        font-size 6.3em 
+      }
+      +below(768px){
+        margin-bottom 0
+        span{
+          letter-spacing 0 !important
+          text-align center !important
+          line-height 120% !important
+        }
+      }
+      .f1{
+        display block
+        text-align justify
+        font-family HS 
+        font-size 1.2em
+        letter-spacing .023em 
+        +below(768px){
+          font-size 0.8em
+        }
+      }
+      .f2{
+        display block
+        text-align justify
+        // text-transform lowercase
+        font-family CBYG
+        font-size 0.7em
+        line-height 120%
+        padding-top 13px
+        margin 0
+        +below(768px){
+          font-size .6em
+        }
+      }
+      .f3{
+        line-height 100%
+        font-family ASCB 
+        text-transform uppercase
+        display block
+        text-align justify
+        font-size 0.95em
+        +below(768px){
+          font-size .6em
+        }
+      }
+    }
+    +below(768px){ 
+      width 100%
+      float none
+      padding-top 25px
+      padding-left 15px
+      padding-right 15px
+      // background red 
+    }
+  } 
+  .col-xs-5{
+    padding-top 104px
+    width 32.6%
+    padding-right 0
+    +below(768px){
+      width 100%
+      clear both
+      padding-top 25px
+      padding-left 15px
+      padding-right 15px
+    } 
+    .well{
+      background #FFF
+      h3{
+        @extend h3.title
+        font-size 3.3em
+        margin-bottom 21px
+        margin-top 23px
+        line-height 115%
+        text-transform uppercase
+        letter-spacing .01em 
+      }
+      .form-control{
+        border 3px solid #dedede
+        text-align left
+        color #333
+        padding 5px 18px
+        -webkit-box-sizing border-box 
+        -moz-box-sizing border-box 
+        box-sizing border-box  
+        height 45px
+        font-family OSB 
+        margin-bottom 31px
+      }
+      .btn-warning{
+        font-family OSB
+        background #F38213
+        text-transform uppercase
+        color #FFF
+        font-size 1em
+        padding 21px 5px
+        margin-bottom 29px  
+      }
+    }
+  }
+}
+
+
+article.about-us{
+  padding-top 92px
+  padding-bottom 69px
+  +below(768px){
+    padding-top 45px
+    padding-bottom 20px
+  }
+  h3{
+    @extend h3.title
+    text-transform none
+    font-size 3.3em
+    text-align center
+    margin 0
+    line-height 128%
+    letter-spacing .012em
+    margin-bottom 54px
+    +below(768px){
+      br{
+        display none
+      }
+    }
+  }
+  ul{
+    list-style-type none
+    margin 0px 0px 0px 0px 
+    padding 0px 0px 0px 155px 
+    font-family OSL 
+    margin auto
+    color #666666
+    // max-width 600px
+    +below(979px){
+      padding-left 70px
+    }
+    +below(768px){
+      padding-left 20px
+    }
+    li{
+      line-height 130%
+      margin 0
+      margin-bottom 27px
+      font-size 1.28em
+      position relative
+      padding-left 45px
+      span{
+        position absolute
+        top 3px
+        left 3px
+      }
+    }
+  }
+}
+
+
+
+article.about-discount{
+  padding-top 64px
+  padding-bottom 90px
+  background #b2d040
+  +below(768px){
+    padding-top 35px
+    padding-bottom 30px
+  }
+  .container{
+    max-width 970px
+  }
+  h3{
+    @extend h3.title
+    font-size 5.3em
+    margin-bottom 58px
+  }
+  form{
+    display block
+    margin auto
+    max-width 616px
+    .form-control{
+      border-color #8EAB1A 
+      height 62px
+      margin-bottom 29px
+      padding-left 16px
+      +below(768px){
+        margin-bottom 10px
+      }
+    }
+    .btn-warning{
+      text-transform none
+      padding 19px 55px
+      font-size 1.56em
+      font-family OSB 
+      +below(768px){
+        display block
+        width 100%
+      }
+    }
+  }
+  .col-xs-4{
+    padding-left 20px
+    padding-right 20px
+    padding-bottom 64px
+    +below(768px){
+      width 100%
+      clear both
+      float none
+    }
+    .number{
+      -webkit-border-radius 100%
+      border-radius 100%
+      color #521b36
+      font-family ASCB 
+      font-size 7em
+      background #EDF0CF  
+      width 130px
+      height 130px
+      line-height 130px
+      text-align center
+      margin auto
+      margin-bottom 22px
+    }
+    p{
+      color #333332
+      text-align center
+      font-size 1.02em
+      line-height 180%
+      margin 0 
+      font-family OSL 
+    }
+  }
+}
+
+
+
+article.testimonials{
+  padding-top 69px
+  padding-bottom 118px
+  background #FFF
+  &.gray{
+    background #F5F5F5 
+  }
+  .icon-gray-tick{
+    display block
+    margin auto
+    margin-bottom 25px
+  }
+  cite{
+    display block
+    margin auto
+    max-width 600px
+    text-align center
+    font-family OSLI 
+    color #666
+    margin-bottom 12px
+    line-height 186%
+  }
+  p.name{
+    text-align center
+    color #414141
+    font-family OSL
+    strong{
+      color #333333
+      font-family OSR 
+    } 
+  }
+  .carousel{
+    .carousel-indicators{
+      bottom -33px !important
+      // margin 0 auto
+      li{
+        border none
+        width 11px
+        height 11px
+        margin-left 3px
+        margin-right 3px
+        margin-bottom 0
+        background #cccccc
+        &.active{
+          background #b2d040
+        }
+      }
+    }
+  }
+}
+
+
+footer.bottom{
+  border-top 1px solid #e7e3e0
+  padding-top 23px
+  .container{
+    max-width 970px
+  }
+  .col-xs-4{
+    padding-bottom 35px
+    +below(768px)
+    {
+      text-align center
+      width 100%
+      clear both
+      padding-top 10px
+      padding-bottom 20px
+    }
+  } 
+  .logo{
+    display inline-block
+    vertical-align middle
+  }
+  p{
+    color #776251
+    line-height 124%
+    margin 0
+    padding-top 8px
+    font-size .93em
+    font-family OSL  
+  }
+}
+
+
+
+
+
+
+header.top-v2{
+  background #FFF
+  padding-top 55px
+  padding-bottom 49px
+  +below(768px){
+    padding-top 25px
+    .col-xs-6{
+      width 100%
+      float none
+    }
+  }
+ .left{
+   h3{
+    @extend h3.title
+    text-align center
+    line-height 122%
+    margin-bottom 33px
+    font-size 4.2em !important
+    text-transform none
+   }
+   h4.summary{
+     text-align center
+     font-family OSL
+     color #333
+     letter-spacing .017em
+     line-height 128%
+     font-size 1.9em 
+     margin-bottom 33px
+   }
+   ul{
+    list-style-type none
+    margin 0px 0px 0px 0px 
+    padding 0
+    font-family OSL 
+    margin auto
+    color #666666
+    // max-width 600px
+      +below(768px){
+        padding-left 25px
+      }
+    li{
+      line-height 130%
+      margin 0
+      margin-bottom 20px
+      font-size 1.28em
+      position relative
+      padding-left 45px
+      span{
+        position absolute
+        top 3px
+        left 0
+      }
+    }
+  }
+ }
+ .right{
+   padding-top 13px
+   .well{
+     padding 26px 28px 
+     padding-bottom 40px
+    background #6F523D 
+   }
+    h3{
+      @extend h3.title
+      text-align center
+      font-size 4.2em
+      margin 10px 0
+      margin-bottom 34px
+      line-height 123%  
+      color #ECE956 
+    }
+    form{
+      .form-control{
+        margin-bottom 32px
+        +below(768px){
+          margin-bottom 15px
+        }
+      }
+      .btn-warning{
+        text-transform uppercase
+        font-size 1.29em
+        padding 18px 3px 
+      }
+      label.error{
+        color #FFF
+      }
+    }
+    ul.roles-list{
+      list-style-type none
+      margin 0
+      padding 0
+      color #FFF
+      margin-bottom 44px
+      li{
+        font-size 1.14em
+        font-family OSL 
+        line-height 153%
+        margin-bottom 19px
+        position relative
+        padding-left 40px
+        +below(768px){
+          padding-left 0
+          text-align center
+          margin-bottom 35px
+        }
+        span{
+          position absolute
+          top 11px
+          left -3px
+          font-size 3.3em
+          font-family OSB 
+          +below(768px){
+              display block
+              position relative
+              text-align center
+              margin auto
+              margin-bottom 25px
+            }
+        }
+      }
+    }
+ }
+  
+}

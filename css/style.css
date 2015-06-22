@@ -1,0 +1,608 @@
+.icon-gray-tick{
+background-position: 0px 0px;
+width: 23px;
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(../img/spritesheet.png);
+height: 19px;
+}
+.icon-green-tick{
+background-position: -25px 0px;
+width: 23px;
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(../img/spritesheet.png);
+height: 19px;
+}
+
+@font-face {
+  font-family: "ASCB";
+  src: url("../fonts/amaticsc-bold-webfont.eot");
+  src: url("../fonts/amaticsc-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/amaticsc-bold-webfont.woff") format("woff"), url("../fonts/amaticsc-bold-webfont.ttf") format("truetype"), url("../fonts/amaticsc-bold-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ASCR";
+  src: url("../fonts/amaticsc-regular-webfont.eot");
+  src: url("../fonts/amaticsc-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/amaticsc-regular-webfont.woff") format("woff"), url("../fonts/amaticsc-regular-webfont.ttf") format("truetype"), url("../fonts/amaticsc-regular-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CBYG";
+  src: url("../fonts/coveredbyyourgrace-webfont.eot");
+  src: url("../fonts/coveredbyyourgrace-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/coveredbyyourgrace-webfont.woff") format("woff"), url("../fonts/coveredbyyourgrace-webfont.ttf") format("truetype"), url("../fonts/coveredbyyourgrace-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HS";
+  src: url("../fonts/handsean-webfont.eot");
+  src: url("../fonts/handsean-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/handsean-webfont.woff") format("woff"), url("../fonts/handsean-webfont.ttf") format("truetype"), url("../fonts/handsean-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OSB";
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OSBI";
+  src: url("../fonts/opensans-bolditalic-webfont.eot");
+  src: url("../fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bolditalic-webfont.woff") format("woff"), url("../fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("../fonts/opensans-bolditalic-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OSL";
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OSLI";
+  src: url("../fonts/opensans-lightitalic-webfont.eot");
+  src: url("../fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff"), url("../fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("../fonts/opensans-lightitalic-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OSR";
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: OSR, Arial;
+}
+.container {
+  max-width: 970px;
+}
+.container.container-fluid {
+  max-width: 100%;
+  width: 100%;
+}
+h3.title,
+header.top .col-xs-5 .well h3,
+article.about-us h3,
+article.about-discount h3,
+header.top-v2 .left h3,
+header.top-v2 .right h3 {
+  text-align: center;
+  color: #521b36;
+  font-family: ASCB;
+  text-transform: uppercase;
+}
+form .form-group {
+  margin-bottom: 10px;
+}
+form input.form-control {
+  color: #999;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 45px;
+  border: 3px solid #dedede;
+  font-family: OSB;
+  color: #333;
+}
+form label.error {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  font-family: OSL;
+}
+form .btn-warning {
+  background: #f38213;
+  line-height: 100%;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: OSB;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: middle;
+  white-space: normal;
+}
+header.top {
+  padding-top: 25px;
+  padding-bottom: 117px;
+  background: url("../img/header_image.jpg") no-repeat center #6f6f3e;
+}
+@media only screen and (max-width: 768px) {
+  header.top {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+}
+header.top .container {
+  max-width: 970px;
+}
+header.top .row {
+  margin: 0;
+}
+header.top .col-xs-7 {
+  width: 67.1%;
+  padding-top: 82px;
+  padding-left: 0;
+}
+header.top .col-xs-7 h1 {
+  color: #fff;
+  font-size: 8.3em;
+}
+@media only screen and (max-width: 979px) {
+  header.top .col-xs-7 h1 {
+    font-size: 6.3em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header.top .col-xs-7 h1 {
+    margin-bottom: 0;
+  }
+  header.top .col-xs-7 h1 span {
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    line-height: 120% !important;
+  }
+}
+header.top .col-xs-7 h1 .f1 {
+  display: block;
+  text-align: justify;
+  font-family: HS;
+  font-size: 1.2em;
+  letter-spacing: 0.023em;
+}
+@media only screen and (max-width: 768px) {
+  header.top .col-xs-7 h1 .f1 {
+    font-size: 0.8em;
+  }
+}
+header.top .col-xs-7 h1 .f2 {
+  display: block;
+  text-align: justify;
+  font-family: CBYG;
+  font-size: 0.7em;
+  line-height: 120%;
+  padding-top: 13px;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  header.top .col-xs-7 h1 .f2 {
+    font-size: 0.6em;
+  }
+}
+header.top .col-xs-7 h1 .f3 {
+  line-height: 100%;
+  font-family: ASCB;
+  text-transform: uppercase;
+  display: block;
+  text-align: justify;
+  font-size: 0.95em;
+}
+@media only screen and (max-width: 768px) {
+  header.top .col-xs-7 h1 .f3 {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header.top .col-xs-7 {
+    width: 100%;
+    float: none;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+header.top .col-xs-5 {
+  padding-top: 104px;
+  width: 32.6%;
+  padding-right: 0;
+}
+@media only screen and (max-width: 768px) {
+  header.top .col-xs-5 {
+    width: 100%;
+    clear: both;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+header.top .col-xs-5 .well {
+  background: #fff;
+}
+header.top .col-xs-5 .well h3 {
+  font-size: 3.3em;
+  margin-bottom: 21px;
+  margin-top: 23px;
+  line-height: 115%;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+header.top .col-xs-5 .well .form-control {
+  border: 3px solid #dedede;
+  text-align: left;
+  color: #333;
+  padding: 5px 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 45px;
+  font-family: OSB;
+  margin-bottom: 31px;
+}
+header.top .col-xs-5 .well .btn-warning {
+  font-family: OSB;
+  background: #f38213;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1em;
+  padding: 21px 5px;
+  margin-bottom: 29px;
+}
+article.about-us {
+  padding-top: 92px;
+  padding-bottom: 69px;
+}
+@media only screen and (max-width: 768px) {
+  article.about-us {
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+}
+article.about-us h3 {
+  text-transform: none;
+  font-size: 3.3em;
+  text-align: center;
+  margin: 0;
+  line-height: 128%;
+  letter-spacing: 0.012em;
+  margin-bottom: 54px;
+}
+@media only screen and (max-width: 768px) {
+  article.about-us h3 br {
+    display: none;
+  }
+}
+article.about-us ul {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 155px;
+  font-family: OSL;
+  margin: auto;
+  color: #666;
+}
+@media only screen and (max-width: 979px) {
+  article.about-us ul {
+    padding-left: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article.about-us ul {
+    padding-left: 20px;
+  }
+}
+article.about-us ul li {
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 1.28em;
+  position: relative;
+  padding-left: 45px;
+}
+article.about-us ul li span {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+article.about-discount {
+  padding-top: 64px;
+  padding-bottom: 90px;
+  background: #b2d040;
+}
+@media only screen and (max-width: 768px) {
+  article.about-discount {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+}
+article.about-discount .container {
+  max-width: 970px;
+}
+article.about-discount h3 {
+  font-size: 5.3em;
+  margin-bottom: 58px;
+}
+article.about-discount form {
+  display: block;
+  margin: auto;
+  max-width: 616px;
+}
+article.about-discount form .form-control {
+  border-color: #8eab1a;
+  height: 62px;
+  margin-bottom: 29px;
+  padding-left: 16px;
+}
+@media only screen and (max-width: 768px) {
+  article.about-discount form .form-control {
+    margin-bottom: 10px;
+  }
+}
+article.about-discount form .btn-warning {
+  text-transform: none;
+  padding: 19px 55px;
+  font-size: 1.56em;
+  font-family: OSB;
+}
+@media only screen and (max-width: 768px) {
+  article.about-discount form .btn-warning {
+    display: block;
+    width: 100%;
+  }
+}
+article.about-discount .col-xs-4 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 64px;
+}
+@media only screen and (max-width: 768px) {
+  article.about-discount .col-xs-4 {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+}
+article.about-discount .col-xs-4 .number {
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  color: #521b36;
+  font-family: ASCB;
+  font-size: 7em;
+  background: #edf0cf;
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 22px;
+}
+article.about-discount .col-xs-4 p {
+  color: #333332;
+  text-align: center;
+  font-size: 1.02em;
+  line-height: 180%;
+  margin: 0;
+  font-family: OSL;
+}
+article.testimonials {
+  padding-top: 69px;
+  padding-bottom: 118px;
+  background: #fff;
+}
+article.testimonials.gray {
+  background: #f5f5f5;
+}
+article.testimonials .icon-gray-tick {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+article.testimonials cite {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: OSLI;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 186%;
+}
+article.testimonials p.name {
+  text-align: center;
+  color: #414141;
+  font-family: OSL;
+}
+article.testimonials p.name strong {
+  color: #333;
+  font-family: OSR;
+}
+article.testimonials .carousel .carousel-indicators {
+  bottom: -33px !important;
+}
+article.testimonials .carousel .carousel-indicators li {
+  border: none;
+  width: 11px;
+  height: 11px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 0;
+  background: #ccc;
+}
+article.testimonials .carousel .carousel-indicators li.active {
+  background: #b2d040;
+}
+footer.bottom {
+  border-top: 1px solid #e7e3e0;
+  padding-top: 23px;
+}
+footer.bottom .container {
+  max-width: 970px;
+}
+footer.bottom .col-xs-4 {
+  padding-bottom: 35px;
+}
+@media only screen and (max-width: 768px) {
+  footer.bottom .col-xs-4 {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+footer.bottom .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer.bottom p {
+  color: #776251;
+  line-height: 124%;
+  margin: 0;
+  padding-top: 8px;
+  font-size: 0.93em;
+  font-family: OSL;
+}
+header.top-v2 {
+  background: #fff;
+  padding-top: 55px;
+  padding-bottom: 49px;
+}
+@media only screen and (max-width: 768px) {
+  header.top-v2 {
+    padding-top: 25px;
+  }
+  header.top-v2 .col-xs-6 {
+    width: 100%;
+    float: none;
+  }
+}
+header.top-v2 .left h3 {
+  text-align: center;
+  line-height: 122%;
+  margin-bottom: 33px;
+  font-size: 4.2em !important;
+  text-transform: none;
+}
+header.top-v2 .left h4.summary {
+  text-align: center;
+  font-family: OSL;
+  color: #333;
+  letter-spacing: 0.017em;
+  line-height: 128%;
+  font-size: 1.9em;
+  margin-bottom: 33px;
+}
+header.top-v2 .left ul {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  font-family: OSL;
+  margin: auto;
+  color: #666;
+}
+@media only screen and (max-width: 768px) {
+  header.top-v2 .left ul {
+    padding-left: 25px;
+  }
+}
+header.top-v2 .left ul li {
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 1.28em;
+  position: relative;
+  padding-left: 45px;
+}
+header.top-v2 .left ul li span {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+header.top-v2 .right {
+  padding-top: 13px;
+}
+header.top-v2 .right .well {
+  padding: 26px 28px;
+  padding-bottom: 40px;
+  background: #6f523d;
+}
+header.top-v2 .right h3 {
+  text-align: center;
+  font-size: 4.2em;
+  margin: 10px 0;
+  margin-bottom: 34px;
+  line-height: 123%;
+  color: #ece956;
+}
+header.top-v2 .right form .form-control {
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 768px) {
+  header.top-v2 .right form .form-control {
+    margin-bottom: 15px;
+  }
+}
+header.top-v2 .right form .btn-warning {
+  text-transform: uppercase;
+  font-size: 1.29em;
+  padding: 18px 3px;
+}
+header.top-v2 .right form label.error {
+  color: #fff;
+}
+header.top-v2 .right ul.roles-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 44px;
+}
+header.top-v2 .right ul.roles-list li {
+  font-size: 1.14em;
+  font-family: OSL;
+  line-height: 153%;
+  margin-bottom: 19px;
+  position: relative;
+  padding-left: 40px;
+}
+@media only screen and (max-width: 768px) {
+  header.top-v2 .right ul.roles-list li {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+header.top-v2 .right ul.roles-list li span {
+  position: absolute;
+  top: 11px;
+  left: -3px;
+  font-size: 3.3em;
+  font-family: OSB;
+}
+@media only screen and (max-width: 768px) {
+  header.top-v2 .right ul.roles-list li span {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
